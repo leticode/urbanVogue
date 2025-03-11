@@ -24,9 +24,11 @@ let productos = [
 let contendorCategorias = document.querySelector(".contenedorCategorias");
 for (let categoriaProducto of categorias){
     let divCategoria = document.createElement("div");
-    divCategoria.className = "divCategoria"
+    divCategoria.className = "divCategoria";
+    divCategoria.id = "boton_" + categoriaProducto.id;
     divCategoria.addEventListener ("click", ()=>{
         crearProductos(categoriaProducto.id);
+        actualizarColorBotonCategoria(categoriaProducto.id);
     })
 
     let divNombreCategoria = document.createElement("div");
@@ -37,6 +39,17 @@ for (let categoriaProducto of categorias){
     contendorCategorias.appendChild(divCategoria)
 }
 
+
+function actualizarColorBotonCategoria(categoriaId) {
+    for (let categoriaProducto of categorias){
+        let divCategoria = document.getElementById("boton_" + categoriaProducto.id);
+        if (categoriaProducto.id == categoriaId){
+            divCategoria.classList.add("seleccionada");
+        } else{
+            divCategoria.classList.remove("seleccionada");
+        }
+    }
+}
 
 function crearProductos(categoriaId){
     let catalogoProductos = document.querySelector(".catalogoProducto");

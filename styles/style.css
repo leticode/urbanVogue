@@ -2,6 +2,7 @@
     --color-fondo: #EAEAEA; 
     --color-header-footer: #2F4F4F; 
     --color-categorias-cards: #A9B2B0; 
+    --color-categoria-seleccionada: #00ffcc;
     --color-texto: #2C3E50; 
     --color-boton: #5D6D7E; 
     --color-boton-hover: #4D6273; 
@@ -81,6 +82,10 @@ body{
     padding:10px;
     border-radius: 10px;
     font-family: var(--fuente-boton-categorias);
+}
+
+.seleccionada {
+    background-color: var(--color-categoria-seleccionada);
 }
 
 
