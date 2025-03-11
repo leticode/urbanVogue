@@ -26,6 +26,7 @@ for (let categoriaProducto of categorias){
     let divCategoria = document.createElement("div");
     divCategoria.className = "divCategoria"
     divCategoria.addEventListener ("click", ()=>{
+        crearProductos(categoriaProducto.id)
         
     })
 
@@ -38,38 +39,43 @@ for (let categoriaProducto of categorias){
 }
 
 
-function crearProductos(){
+function crearProductos(categoriaId){
     let catalogoProductos = document.querySelector(".catalogoProducto");
+    catalogoProductos.innerHTML = "";
+
     for (let producto of productos){
-       let divProducto = document.createElement("div");
-       divProducto.className = "divProducto"
-       
-       let divImg = document.createElement("img");
-       divProducto.appendChild(divImg);
-       divImg.src = producto.img;
-    
-       let divNombre = document.createElement("div");
-       divProducto.appendChild(divNombre);
-       divNombre.textContent = producto.nombre;
-       divNombre.className = "divNombre"
-    
-       let divPrecio = document.createElement("div");
-       divProducto.appendChild(divPrecio);
-       divPrecio.textContent = producto.precio;
-       divPrecio.className = "divPrecio";
-    
-       let divBtn = document.createElement("button");
-       divProducto.appendChild(divBtn);
-       divBtn.textContent = "Agregar al carrito";
-       divBtn.className = "divBtn";
-    
-    
-       catalogoProductos.appendChild(divProducto);
-       
-    }
+        if (producto.categoria == categoriaId ){
+            let divProducto = document.createElement("div");
+            divProducto.className = "divProducto"
+            
+            let divImg = document.createElement("img");
+            divProducto.appendChild(divImg);
+            divImg.src = producto.img;
+         
+            let divNombre = document.createElement("div");
+            divProducto.appendChild(divNombre);
+            divNombre.textContent = producto.nombre;
+            divNombre.className = "divNombre"
+         
+            let divPrecio = document.createElement("div");
+            divProducto.appendChild(divPrecio);
+            divPrecio.textContent = producto.precio;
+            divPrecio.className = "divPrecio";
+         
+            let divBtn = document.createElement("button");
+            divProducto.appendChild(divBtn);
+            divBtn.textContent = "Agregar al carrito";
+            divBtn.className = "divBtn";
+         
+         
+            catalogoProductos.appendChild(divProducto);
+            
+         }
+
+        }
 
 }
-crearProductos();
+crearProductos("pan");
 
 
     
