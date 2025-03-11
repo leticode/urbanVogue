@@ -1,9 +1,4 @@
-body{
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-}
+
 .contenedorPrincipal{
     margin: 0;
     padding: 0;
@@ -35,4 +30,12 @@ body{
     margin: 0 auto;
     font-weight: 700;
     text-transform: uppercase;
+}
+.divPrecio{
+    text-align: center;
+    padding: 10px;
+}
+
+.divCategoria{
+    
 }

@@ -51,10 +51,13 @@ for (let producto of productos){
    let divPrecio = document.createElement("div");
    divProducto.appendChild(divPrecio);
    divPrecio.textContent = producto.precio;
+   divPrecio.className = "divPrecio";
 
 
    catalogoProductos.appendChild(divProducto);
+   
 }
+
     
     
 
