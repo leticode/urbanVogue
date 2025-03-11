@@ -1,11 +1,11 @@
 :root {
-    --color-fondo: #EAEAEA; /* Gris suave con un toque cálido, perfecto para el fondo */
-    --color-header-footer: #2F4F4F; /* Verde oscuro, serio y sofisticado para el header y footer */
-    --color-categorias-cards: #A9B2B0; /* Gris verdoso claro, ideal para las categorías y cards, equilibrado sin ser demasiado brillante */
-    --color-texto: #2C3E50; /* Gris oscuro, un contraste fuerte y agradable para facilitar la lectura */
-    --color-boton: #5D6D7E; /* Gris azulado, sobrio pero con un toque de color para los botones */
-    --color-boton-hover: #4D6273; /* Gris azulado más oscuro para el hover, creando un cambio suave pero claro */
-    --color-texto:#e1e1e1; /* Blanco, para asegurar que el texto en el botón sea legible */
+    --color-fondo: #EAEAEA; 
+    --color-header-footer: #2F4F4F; 
+    --color-categorias-cards: #A9B2B0; 
+    --color-texto: #2C3E50; 
+    --color-boton: #5D6D7E; 
+    --color-boton-hover: #4D6273; 
+    --color-texto:#e1e1e1; 
     
     --fuente-boton-categorias: 'Poppins', sans-serif;
     --fuente-productos-precio: 'Roboto', sans-serif;
