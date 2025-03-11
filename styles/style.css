@@ -1,12 +1,12 @@
 :root {
-    --color-fondo: #F4F4F4; 
-    --color-header-footer: #333333; 
-    --color-categorias-cards: #D1D1D1; 
-    --color-texto: #3C3C3C;
-    --color-boton: #7B8D8E;
-    --color-boton-hover: #6A7C7B;
-    --color-texto-boton: #FFFFFF; 
-
+    --color-fondo: #EAEAEA; /* Gris suave con un toque cálido, perfecto para el fondo */
+    --color-header-footer: #2F4F4F; /* Verde oscuro, serio y sofisticado para el header y footer */
+    --color-categorias-cards: #A9B2B0; /* Gris verdoso claro, ideal para las categorías y cards, equilibrado sin ser demasiado brillante */
+    --color-texto: #2C3E50; /* Gris oscuro, un contraste fuerte y agradable para facilitar la lectura */
+    --color-boton: #5D6D7E; /* Gris azulado, sobrio pero con un toque de color para los botones */
+    --color-boton-hover: #4D6273; /* Gris azulado más oscuro para el hover, creando un cambio suave pero claro */
+    --color-texto:#e1e1e1; /* Blanco, para asegurar que el texto en el botón sea legible */
+    
     --fuente-boton-categorias: 'Poppins', sans-serif;
     --fuente-productos-precio: 'Roboto', sans-serif;
     --fuente-header-footer: 'Montserrat', sans-serif;
@@ -70,7 +70,7 @@ body{
     margin: 10px;
     text-align: center;
     background-color:var(--color-boton);
-    color: var(--color-texto-boton);
+    color: var(--color-texto);
     font-family: var(--fuente-boton-categorias);
     cursor: pointer;
     font-weight: bold;
@@ -83,6 +83,8 @@ body{
 }
 .divCategoria {
     background-color: var(--color-categorias-cards);
+    color: var(--color-texto);
+    font-weight: 600;
     padding: 10px 50px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
