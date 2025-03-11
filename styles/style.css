@@ -40,7 +40,6 @@ body{
 .divProducto{
     background-color: var(--color-categorias-cards);
     margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 15px;
     
 }
@@ -66,18 +65,14 @@ body{
     border: none;
     padding: 10px;
     margin: 10px;
-    text-align: center;
     background-color:var(--color-boton);
     color: var(--color-texto);
     font-family: var(--fuente-boton-categorias);
-    cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .divBtn:hover{
     background-color: var(--color-boton-hover);
-    transform: translateY(-2px);
 }
 .divCategoria {
     background-color: var(--color-categorias-cards);
@@ -108,57 +103,16 @@ body{
         text-align: center;
     }
     
-    .catalogoProducto img{
-        width: 100%;
-    }
-    
-    .divProducto{
-        background-color: var(--color-categorias-cards);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        padding: 15px;
-        
-    }
-    
-    .divNombre{
-        
-        margin: 0 auto;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin: 10px 0;
-        color: var(--color-texto);
-        font-family: var(--fuente-productos-precio);
-    }
-    .divPrecio{
-        
-        padding: 10px;
-        color: var(--color-texto);
-        font-family: var(--fuente-productos-precio);
-    }
-    
     .divBtn{
-        border-radius: 10px;
-        border: none;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-        background-color:var(--color-boton);
-        color: var(--color-texto);
-        font-family: var(--fuente-boton-categorias);
         cursor: pointer;
         font-weight: bold;
         transition: background-color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .divBtn:hover{
-        background-color: var(--color-boton-hover);
         transform: translateY(-2px);
     }
     .divCategoria {
-        background-color: var(--color-categorias-cards);
-        color: var(--color-texto);
-        font-weight: 600;
         padding: 10px 50px;
-        border-radius: 10px;
         transition: transform 0.3s ease-in-out;
         font-family: var(--fuente-boton-categorias);
     }
