@@ -29,6 +29,7 @@ for (let categoriaProducto of categorias){
     let divNombreCategoria = document.createElement("div");
     divNombreCategoria.textContent = categoriaProducto.nombre;
     divCategoria.appendChild(divNombreCategoria);
+    divNombreCategoria.className = "divCategoriaNombre"
 
     contendorCategorias.appendChild(divCategoria)
 }

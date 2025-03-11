@@ -1,3 +1,20 @@
+:root {
+    --color-fondo: #F4F4F4; 
+    --color-header-footer: #333333; 
+    --color-categorias-cards: #D1D1D1; 
+    --color-texto: #3C3C3C;
+    --color-boton: #7B8D8E;
+    --color-boton-hover: #6A7C7B;
+    --color-texto-boton: #FFFFFF; 
+
+    --fuente-boton-categorias: 'Poppins', sans-serif;
+    --fuente-productos-precio: 'Roboto', sans-serif;
+    --fuente-header-footer: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--color-fondo);
+    
+}
 
 .contenedorPrincipal{
     margin: 0;
@@ -5,7 +22,9 @@
 }
 .contenedorCategorias{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px 0;
 }
 .catalogoProducto {
     display: grid;
@@ -22,28 +41,55 @@
 }
 
 .divProducto{
-    background-color: #a3d5d5;
+    background-color: var(--color-categorias-cards);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
     
 }
 
 .divNombre{
-   
+    
     margin: 0 auto;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
+    margin: 10px 0;
+    color: var(--color-texto);
+    font-family: var(--fuente-productos-precio);
 }
 .divPrecio{
-  
+    
     padding: 10px;
+    color: var(--color-texto);
+    font-family: var(--fuente-productos-precio);
 }
 
- .divBtn{
+.divBtn{
     border-radius: 10px;
     border: none;
     padding: 10px;
     margin: 10px;
     text-align: center;
+    background-color:var(--color-boton);
+    color: var(--color-texto-boton);
+    font-family: var(--fuente-boton-categorias);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.divCategoria{
-    
+.divBtn:hover{
+    background-color: var(--color-boton-hover);
+    transform: translateY(-2px);
 }
+.divCategoria {
+    background-color: var(--color-categorias-cards);
+    padding: 10px 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    font-family: var(--fuente-boton-categorias);
+}
+
+.divCategoria:hover {
+    transform: scale(1.1);
+}
+
