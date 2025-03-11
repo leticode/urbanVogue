@@ -14,6 +14,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px 20px ;
+    text-align: center;
 }
 
 .catalogoProducto img{
@@ -26,16 +27,23 @@
 }
 
 .divNombre{
-    text-align: center;
+   
     margin: 0 auto;
     font-weight: 700;
     text-transform: uppercase;
 }
 .divPrecio{
-    text-align: center;
+  
     padding: 10px;
 }
 
+ .divBtn{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
 .divCategoria{
     
 }

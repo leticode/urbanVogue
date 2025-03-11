@@ -53,6 +53,11 @@ for (let producto of productos){
    divPrecio.textContent = producto.precio;
    divPrecio.className = "divPrecio";
 
+   let divBtn = document.createElement("button");
+   divProducto.appendChild(divBtn);
+   divBtn.textContent = "Agregar al carrito";
+   divBtn.className = "divBtn";
+
 
    catalogoProductos.appendChild(divProducto);
    
