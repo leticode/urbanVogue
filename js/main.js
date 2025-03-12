@@ -1,25 +1,29 @@
 
 let categorias = [
-    {id: "rem", nombre: "Remera"},
-    {id: "ves", nombre: "Vestido"},
-    {id: "pan", nombre: "Pantalon"},
-    {id : "zap", nombre: "Zapatillas"}
+    {id: "ves", nombre: "Dress"},
+    {id: "pan", nombre: "Pants"},
+    {id: "rem", nombre: "T-shirt"},
+    {id : "zap", nombre: "Sneakers"}
 ]
 
 let productos = [
-    {categoria: "pan", nombre: "pantalon", precio: "$40.000", img: "../img/pant1.jpg"},
-    {categoria: "pan", nombre: "pantalon", precio: "$40.000", img: "../img/pant2.jpg"},
-    {categoria: "pan", nombre: "pantalon", precio: "$40.000", img: "../img/pant3.jpg"},
-    {categoria: "zap", nombre: "zapatilla", precio: "$40.000", img: "../img/zapas1.jpg"},
-    {categoria: "zap", nombre: "zapatilla", precio: "$40.000", img: "../img/zapas2.jpg"},
-    {categoria: "zap", nombre: "zapatilla", precio: "$40.000", img: "../img/zapas3.jpg"},
-    {categoria: "rem", nombre: "remera", precio: "$40.000", img: "../img/rem1.jpg"},
-    {categoria: "rem", nombre: "remera", precio: "$40.000", img: "../img/rem2.jpg"},
-    {categoria: "rem", nombre: "remera", precio: "$40.000", img: "../img/rem3.jpg"},
-    {categoria: "ves", nombre: "vestido", precio: "$40.000", img: "../img/ves1.jpg"},
-    {categoria: "ves", nombre: "vestido", precio: "$40.000", img: "../img/ves2.jpg"},
-    {categoria: "ves", nombre: "vestido", precio: "$40.000", img: "../img/ves3.jpg"}
+    {categoria: "pan", nombre: "Suit pants", precio: "$55", img: "../img/pant1.jpg"},
+    {categoria: "pan", nombre: "Culottes pants", precio: "$25", img: "../img/pant2.jpg"},
+    {categoria: "pan", nombre: "Slacks pants", precio: "$40", img: "../img/pant3.jpg"},
+    {categoria: "zap", nombre: "Nike Air Jordan 1", precio: "$93", img: "../img/zapas1.jpg"},
+    {categoria: "zap", nombre: "Nike Air Force x Artist Collabs", precio: "$79", img: "../img/zapas2.jpg"},
+    {categoria: "zap", nombre: "Nike Air Force 1", precio: "$67", img: "../img/zapas3.jpg"},
+    {categoria: "rem", nombre: "V-neck t-shirt", precio: "$24", img: "../img/rem1.jpg"},
+    {categoria: "rem", nombre: "Ringer t-shirt", precio: "$18", img: "../img/rem2.jpg"},
+    {categoria: "rem", nombre: "Graphic t-shirt", precio: "$20", img: "../img/rem3.jpg"},
+    {categoria: "ves", nombre: "Cocktail dress", precio: "$70", img: "../img/ves1.jpg"},
+    {categoria: "ves", nombre: "Slip dress", precio: "$48", img: "../img/ves2.jpg"},
+    {categoria: "ves", nombre: "Shift dress", precio: "$23", img: "../img/ves3.jpg"}
 ]
+
+let carrito = [];
+
+let contenedorHeader = document.querySelector(".header");
 
 let contendorCategorias = document.querySelector(".contenedorCategorias");
 for (let categoriaProducto of categorias){
