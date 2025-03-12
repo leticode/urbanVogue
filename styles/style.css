@@ -24,7 +24,7 @@ body{
 .contenedorCategorias{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     margin: 10px 0;
 }
 .catalogoProducto {
@@ -89,23 +89,33 @@ body{
 }
 
 
+/*MEDIA QUERIES TABLET*/
+
+@media screen and (min-width: 768px) {
+    .contenedorCategorias{
+        gap: 20px;
+    }
+    .catalogoProducto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        padding: 10px 20px ;
+        text-align: center;
+    }
+}
+
+
 /*MEDIA QUERIES COMPUTADORA*/
 
 @media screen and (min-width: 1024px) {
     .contenedorCategorias{
-        display: flex;
-        justify-content: center;
         gap: 50px;
-        margin: 10px 0;
     }
     .catalogoProducto {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px 20px ;
-        text-align: center;
+        
     }
     
     .divBtn{
