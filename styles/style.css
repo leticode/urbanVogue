@@ -1,6 +1,6 @@
 :root {
     --color-fondo: #EAEAEA; 
-    --color-header-footer: rgba(104, 136, 136, 0.826); 
+    --color-header-footer: rgba(119, 144, 144, 0.826); 
     --color-categorias-cards: #A9B2B0; 
     --color-categoria-seleccionada: #7b7f7e;
     --color-texto: #2C3E50; 
@@ -36,10 +36,11 @@ body{
 
 .header h1 {
     font-family: var(--fuente-header-footer);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: -1px;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .contenedorPrincipal{
@@ -136,7 +137,7 @@ body{
 @media screen and (min-width: 1024px) {
 
     .header h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     .contenedorCategorias{
         gap: 50px;
