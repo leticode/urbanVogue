@@ -25,6 +25,14 @@ let carrito = [];
 
 let contenedorHeader = document.querySelector(".header");
 
+function headerPagina() {
+    let tituloHeader = document.createElement("h1");
+    contenedorHeader.appendChild(tituloHeader);
+    tituloHeader.textContent = "UrbanVogue"
+}
+
+headerPagina();
+
 let contendorCategorias = document.querySelector(".contenedorCategorias");
 for (let categoriaProducto of categorias){
     let divCategoria = document.createElement("div");
@@ -82,8 +90,7 @@ function crearProductos(categoriaId){
            divProducto.appendChild(divBtn);
            divBtn.textContent = "Agregar al carrito";
            divBtn.className = "divBtn";
-        
-        
+           
            catalogoProductos.appendChild(divProducto);
            
         }
