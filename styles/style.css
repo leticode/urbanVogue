@@ -1,12 +1,12 @@
 :root {
     --color-fondo: #EAEAEA; 
-    --color-header-footer: rgba(119, 144, 144, 0.826); 
-    --color-categorias-cards: #A9B2B0; 
-    --color-categoria-seleccionada: #7b7f7e;
-    --color-texto: #2C3E50; 
-    --color-boton: #5D6D7E; 
-    --color-boton-hover: #4D6273; 
-    --color-texto:#e1e1e1; 
+    --color-header-footer-card: #ffffffcf;
+    --color-categorias: #a9a9a983;
+    --color-texto: #5D5D5D;
+    --color-categoria-seleccionada: #7b7b7b9b;
+    --color-texto-boton: #E1E1E1;
+    --color-boton: #5D5D5D;
+    --color-boton-hover: #4D4D4D; 
     
     --fuente-boton-categorias: 'Poppins', sans-serif;
     --fuente-productos-precio: 'Roboto', sans-serif;
@@ -25,22 +25,28 @@ body{
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--color-header-footer);
+    background-color: var(--color-header-footer-card);
     color: var(--color-texto);
     height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 ;
 }
 
 .header h1 {
     font-family: var(--fuente-header-footer);
     font-size: 30px;
     font-weight: 700;
-    letter-spacing: -1px;
+    letter-spacing: -3px;
     margin: 0;
     text-transform: uppercase;
+}
+
+.navHeader{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .contenedorPrincipal{
@@ -65,25 +71,22 @@ body{
 }
 
 .divProducto{
-    background-color: var(--color-categorias-cards);
+    background-color: var(--color-header-footer-card);
     margin-bottom: 15px;
-    padding: 15px;
+    
     
 }
 
 .divNombre{
     
-    margin: 0 auto;
+    margin: 10px auto;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 10px 0;
-    color: var(--color-texto);
+    color: var(--color-texto-card);
     font-family: var(--fuente-productos-precio);
 }
 .divPrecio{
-    
-    padding: 10px;
-    color: var(--color-texto);
+    color: var(--color-texto-card);
     font-family: var(--fuente-productos-precio);
 }
 
@@ -93,7 +96,7 @@ body{
     padding: 10px;
     margin: 10px;
     background-color:var(--color-boton);
-    color: var(--color-texto);
+    color: var(--color-texto-boton);
     font-family: var(--fuente-boton-categorias);
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,7 +105,7 @@ body{
     background-color: var(--color-boton-hover);
 }
 .divCategoria {
-    background-color: var(--color-categorias-cards);
+    background-color: var(--color-categorias);
     color: var(--color-texto);
     font-weight: 600;
     padding:10px;

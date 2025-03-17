@@ -28,7 +28,24 @@ let contenedorHeader = document.querySelector(".header");
 function headerPagina() {
     let tituloHeader = document.createElement("h1");
     contenedorHeader.appendChild(tituloHeader);
-    tituloHeader.textContent = "UrbanVogue"
+    tituloHeader.textContent = "UrbanVogue";
+
+    
+    for (let categoriaProductoNav of categorias){
+        let navHeader = document.createElement("nav");
+        contenedorHeader.appendChild(navHeader);
+        navHeader.className = "navHeader";
+        
+        let navCategoria = document.createElement("div");
+        navHeader.appendChild(navCategoria);
+        navCategoria.textContent = categoriaProductoNav.nombre;
+        navCategoria.addEventListener ("click", () =>{
+            crearProductos(categoriaProductoNav.id);
+            actualizarColorBotonCategoria(categoriaProductoNav.id);
+        })
+
+    }
+
 }
 
 headerPagina();
@@ -49,6 +66,7 @@ for (let categoriaProducto of categorias){
     divNombreCategoria.className = "divCategoriaNombre"
 
     contendorCategorias.appendChild(divCategoria)
+    
 }
 
 
